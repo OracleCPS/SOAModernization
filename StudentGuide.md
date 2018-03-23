@@ -27,6 +27,13 @@ To install SoapUI for testing the ICS integration follow these instructions:
 
 ---
 
+### Install Oracle Virtual Box
+
+
+### Install SoapUI
+
+
+
 ## Supported Browsers
 
 Most modern browsers including Chrome, Safari, Internet Explorer, Edge and Firefox are supported.

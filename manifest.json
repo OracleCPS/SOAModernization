@@ -30,8 +30,8 @@
             {
                 "number": "300",
                 "filename": "ics300.md",
-                "title": "Lab 300: SOA composite applications Deployment from Oracle JDeveloper",
-                "description": "In this Lab we are going to deploy an HelloWorld web service to SOA Cloud Service from Oracle JDeveloper."
+                "title": "Lab 300: SOACS composite applications Deployment from Oracle JDeveloper",
+                "description": "In this Lab we are going to deploy an 'Hello World' web service to SOA Cloud Service from Oracle JDeveloper."
             }
         ]
     }
