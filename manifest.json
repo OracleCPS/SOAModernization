@@ -1,14 +1,14 @@
 {
     "workshop": {
-        "title": "Cloud Accelerate: OIC (ICS) Developer Workshop",
-        "description": "A hands-on event to explore Oracle’s Integration Cloud.",
+        "title": "Cloud Accelerate: SOA Cloud Service (SOACS) Developer Workshop",
+        "description": "A hands-on event to explore Oracle’s SOA Cloud Service.",
         "theme": "ttc",
         "interactive": "https://launch.oracle.com/?ttcicsdeveloper",
         "labs": [{
                 "number": "1",
                 "filename": "Home.md",
                 "title": "Home",
-                "description": "Welcome to the SOACS Integration workshop"
+                "description": "Welcome to the SOA Cloud Service Integration workshop"
             },{
                 "number": "10",
                 "filename": "StudentGuide.md",
@@ -31,8 +31,8 @@
                 "number": "300",
                 "filename": "ics300.md",
                 "title": "Lab 300: SOA composite applications Deployment from Oracle JDeveloper",
-                "description": "In this Lab we are going to deploy a "HelloWorld" web service to SOA Cloud Service from Oracle JDeveloper."
-            },
+                "description": "In this Lab we are going to deploy an HelloWorld web service to SOA Cloud Service from Oracle JDeveloper."
+            }
         ]
     }
 }
