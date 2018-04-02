@@ -258,11 +258,11 @@ Service Description: Optionally describe the serrvice instance.
 
 SSH Public Key: Click Edit. Select Key file name and click Choose File to select the file you created earlier that contains the public key for the secure shell (SSH). Click Enter.
 
-    ![](images/provisioning/image022.png)
+![](images/provisioning/image022.png)
 
 Software Release: Oracle 12c 12.2.1.2.0
 
-    ![](images/provisioning/image027.png)
+![](images/provisioning/image027.png)
 
 Click Next to specify Service Details.
 
@@ -316,7 +316,7 @@ This option passes each new request to the next managed server in line, evenly d
 
 Compute Shape: OC3- 1 OCPU 7.5 GB RAM
 
-    ![](images/provisioning/image028.png)
+![](images/provisioning/image028.png)
 
 Click Next.
 
@@ -324,11 +324,11 @@ Click Next.
 
 The provisioning wizard validates your entries and presents you with your choices on the Confirmation page. When you are satisfied with your choices, click Create.
 
-    ![](images/provisioning/image030.png)
+![](images/provisioning/image030.png)
 
 ***Note:*** It takes about an hour and a half to create the instance.
 
-    ![](images/provisioning/image031.png)
+![](images/provisioning/image031.png)
 
 You now have provisioned Oracle SOA Cloud Service.
 
