@@ -129,7 +129,7 @@ This tutorial shows you how to create a service instance in Oracle Database Clou
 
 ### Starting the Create Oracle Database Cloud Service Wizard
 
-- Open a browser window and go to Oracle SOA Cloud Service:
+- Open a browser window and go to Oracle Cloud My Services:
 https://myservices.DC_code.oraclecloud.com/
 
 - Sign in to your Services Console using your identity domain.
@@ -235,7 +235,7 @@ you supplied in the OBEs listed above. Be sure you have the following informatio
 
 ## Creating an Instance
 
-- Open a browser window and go to Oracle SOA Cloud Service:
+- Open a browser window and go to Oracle Cloud My Services:
 https://myservices.DC_code.oraclecloud.com
 
 - Sign in to your Services Console using your identity domain, user name and password.
