@@ -39,39 +39,39 @@ Before starting this tutorial, you should have:
 
 - Accept the default key type, SSH-2 RSA.
 
-![](images/provisioning/image017.png)
+    ![](images/provisioning/image017.png)
 
-SSH-2 is the most recent version of the SSH protocol (and is incompatible with SSH-1). RSA and DSA are algorithms for computing digital signatures.
+    SSH-2 is the most recent version of the SSH protocol (and is incompatible with SSH-1). RSA and DSA are algorithms for computing digital signatures.
 
 - Set the Number of bits in a generated key to 2048 bits, if it is not already set with that value.
 This sets the size of your key and thus the security level. A minimum of 2048 bits is recommended for SSH-2 RSA.
 
-![](images/provisioning/bits.png)
+    ![](images/provisioning/bits.png)
 
 - Click Generate.
 
-![](images/provisioning/generate.png)
+    ![](images/provisioning/generate.png)
 
 - Move your mouse around the blank area to generate randomness to the key.
 
-![](images/provisioning/generating_key.png)
+    ![](images/provisioning/generating_key.png)
 
-***NOTE:*** The dotted red line in the image below is for illustration purposes only. It does not appear in the generator pane as you move the mouse.
+    ***NOTE:*** The dotted red line in the image below is for illustration purposes only. It does not appear in the generator pane as you move the mouse.
 
 - The generated key appears under Public key for pasting into OpenSSH authorized_keys file.
 
-![](images/provisioning/generated_key.png)
+    ![](images/provisioning/generated_key.png)
 
 - The key comment is the name of the key that you will use to identify it. You can keep the generated key comment or create your own.
 
-![](images/provisioning/key_comment.png)
+    ![](images/provisioning/key_comment.png)
 
 - If you want to password-protect your key, enter a Key passphrase and enter it again for Confirm passphrase. When you reload a saved private key, you will be asked for the passphrase, if one is set.
 
-![](images/provisioning/passphrase.png)
+    ![](images/provisioning/passphrase.png)
 
-While a passphrase is not required, you should specify one as a security measure to protect the private key from unauthorized use.
-There is no way to recover a passphrase if you forget it.
+    While a passphrase is not required, you should specify one as a security measure to protect the private key from unauthorized use.
+    There is no way to recover a passphrase if you forget it.
 
 - Save the private key of the key pair. Depending how you work with the private key in the future, you may need one saved in the PuTTY PPK format and one saved in OpenSSH format. Let's do both.
 
@@ -104,19 +104,19 @@ There is no way to recover a passphrase if you forget it.
 - In the PuTTY Key Generator, select all of the characters under Public key for pasting into OpenSSH authorized_keys file.
 Make sure you select all the characters, not just the ones you can see in the narrow window. If a scroll bar is next to the characters, you aren't seeing all the characters.
 
-![](images/provisioning/select_pub_key_chars.png)
+    ![](images/provisioning/select_pub_key_chars.png)
 
 - Right click somewhere in the selected text and select Copy from the menu.
 
-![](images/provisioning/select_pub_key_chars_copy.png)
+    ![](images/provisioning/select_pub_key_chars_copy.png)
 
 - Open a text editor and paste the characters, just as you copied them. Start at the first character in the text editor, and do not insert any line breaks.
 
-![](images/provisioning/pasted_public_key.png)
+    ![](images/provisioning/pasted_public_key.png)
 
 - Save the key as a text file, using the same root name as you used for the private key. Add a .pub extension. You can give it any extension you want, but .pub is a useful convention to indicate that this is a public key.
 
-![](images/provisioning/save_pasted_pub_key_as_pub.png)
+    ![](images/provisioning/save_pasted_pub_key_as_pub.png)
 
 - Write down the names of your public and private keys, and note where they are saved. You will need the public key when creating service instances in, for example, Oracle Java Cloud Service and Oracle Database Cloud - Database as a Service. You will need the private key when trying to access a service instance's virtual machine via SSH.
 
@@ -138,11 +138,11 @@ https://myservices.DC_code.oraclecloud.com/
 
 - In the Oracle Cloud My Services page, click the menu icon on the left and then choose the Database link under Services.
 
-![](images/provisioning/image018.png)
+    ![](images/provisioning/image018.png)
 
 - On the Oracle Database Cloud Service page, click Create Instance.
 
-![](images/provisioning/image019.png)
+    ![](images/provisioning/image019.png)
 
 The Create Database Cloud Service Instance wizard displays the Service page.
 
@@ -242,11 +242,11 @@ https://myservices.DC_code.oraclecloud.com
 
 - In the Oracle Cloud My Services page, click the menu icon on the left and then choose the SOA link under Services.
 
-![](images/provisioning/image025.png)
+    ![](images/provisioning/image025.png)
 
 - On the Oracle SOA Cloud Service page, under Instances tab, click Create Instance.
 
-![](images/provisioning/image026.png)
+    ![](images/provisioning/image026.png)
 
 ### Providing Basic Service Instance Information
 
@@ -258,11 +258,11 @@ Service Description: Optionally describe the serrvice instance.
 
 SSH Public Key: Click Edit. Select Key file name and click Choose File to select the file you created earlier that contains the public key for the secure shell (SSH). Click Enter.
 
-![](images/provisioning/image022.png)
+    ![](images/provisioning/image022.png)
 
 Software Release: Oracle 12c 12.2.1.2.0
 
-![](images/provisioning/image027.png)
+    ![](images/provisioning/image027.png)
 
 Click Next to specify Service Details.
 
@@ -316,7 +316,7 @@ This option passes each new request to the next managed server in line, evenly d
 
 Compute Shape: OC3- 1 OCPU 7.5 GB RAM
 
-![](images/provisioning/image028.png)
+    ![](images/provisioning/image028.png)
 
 Click Next.
 
@@ -324,11 +324,11 @@ Click Next.
 
 The provisioning wizard validates your entries and presents you with your choices on the Confirmation page. When you are satisfied with your choices, click Create.
 
-![](images/provisioning/image030.png)
+    ![](images/provisioning/image030.png)
 
 ***Note:*** It takes about an hour and a half to create the instance.
 
-![](images/provisioning/image031.png)
+    ![](images/provisioning/image031.png)
 
 You now have provisioned Oracle SOA Cloud Service.
 
