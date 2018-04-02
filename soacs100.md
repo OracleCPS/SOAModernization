@@ -16,9 +16,13 @@
 - Creating an Oracle Database Cloud Service Instance
 
 ## Creating SSH Keys for Use with Oracle Cloud Services
+
 ### Purpose
+
 This tutorial covers how to create a secure shell (SSH) key pair by using PuTTY on Windows.
+
 ### What Do You Need
+
 PuTTY
 
 PuTTY is a free, open-source implementation of several network protocols, including SSH. It is available for Windows and for UNIX platforms. PuTTY includes several utilities including a terminal emulator, an SSH key generator, and a network transfer application. For this tutorial we will use the PuTTY Key Generator (puttygen.exe) for Windows.
@@ -26,34 +30,46 @@ PuTTY is a free, open-source implementation of several network protocols, includ
 PuTTY is available from many sites, but you can reach the main download site http://www.putty.org.
 
 Before starting this tutorial, you should have:
+
 - Installed PuTTY on your computer with a Windows operating system.
 
 ### Generating an SSH Key Pair Using PuTTY Key Generator
+
 - Find puttygen.exe in the PuTTY folder on your computer, for example, C:\Program Files (x86)\PuTTY. Double-click puttygen.exe to open it.
 
 - Accept the default key type, SSH-2 RSA.
+
 ![](images/provisioning/image017.png)
+
 SSH-2 is the most recent version of the SSH protocol (and is incompatible with SSH-1). RSA and DSA are algorithms for computing digital signatures.
 
 - Set the Number of bits in a generated key to 2048 bits, if it is not already set with that value.
 This sets the size of your key and thus the security level. A minimum of 2048 bits is recommended for SSH-2 RSA.
+
 ![](images/provisioning/bits.png)
 
 - Click Generate.
+
 ![](images/provisioning/generate.png)
 
 - Move your mouse around the blank area to generate randomness to the key.
+
 ![](images/provisioning/generating_key.png)
+
 ***NOTE:*** The dotted red line in the image below is for illustration purposes only. It does not appear in the generator pane as you move the mouse.
 
 - The generated key appears under Public key for pasting into OpenSSH authorized_keys file.
+
 ![](images/provisioning/generated_key.png)
 
 - The key comment is the name of the key that you will use to identify it. You can keep the generated key comment or create your own.
+
 ![](images/provisioning/key_comment.png)
 
 - If you want to password-protect your key, enter a Key passphrase and enter it again for Confirm passphrase. When you reload a saved private key, you will be asked for the passphrase, if one is set.
+
 ![](images/provisioning/passphrase.png)
+
 While a passphrase is not required, you should specify one as a security measure to protect the private key from unauthorized use.
 There is no way to recover a passphrase if you forget it.
 
@@ -64,6 +80,7 @@ There is no way to recover a passphrase if you forget it.
         ![](images/provisioning/save_priv_key.png)
 
         You can name it anything you want, although you may want to use the same name as you used for the key comment. The private key is saved in PuTTY's Private Key (PPK) format, which is a proprietary format that works only with the PuTTY toolset.
+
         ![](images/provisioning/save_as_ppk.png)
 
         You can use this key whenever you use Putty to perform SSH actions.
@@ -86,25 +103,32 @@ There is no way to recover a passphrase if you forget it.
 
 - In the PuTTY Key Generator, select all of the characters under Public key for pasting into OpenSSH authorized_keys file.
 Make sure you select all the characters, not just the ones you can see in the narrow window. If a scroll bar is next to the characters, you aren't seeing all the characters.
+
 ![](images/provisioning/select_pub_key_chars.png)
 
 - Right click somewhere in the selected text and select Copy from the menu.
+
 ![](images/provisioning/select_pub_key_chars_copy.png)
 
 - Open a text editor and paste the characters, just as you copied them. Start at the first character in the text editor, and do not insert any line breaks.
+
 ![](images/provisioning/pasted_public_key.png)
 
 - Save the key as a text file, using the same root name as you used for the private key. Add a .pub extension. You can give it any extension you want, but .pub is a useful convention to indicate that this is a public key.
+
 ![](images/provisioning/save_pasted_pub_key_as_pub.png)
 
 - Write down the names of your public and private keys, and note where they are saved. You will need the public key when creating service instances in, for example, Oracle Java Cloud Service and Oracle Database Cloud - Database as a Service. You will need the private key when trying to access a service instance's virtual machine via SSH.
 
 ## Creating an Oracle Database Cloud Service Instance
+
 ### Purpose
+
 This tutorial shows you how to create a service instance in Oracle Database Cloud Service (Database as a Service).
 
 
 ### Starting the Create Oracle Database Cloud Service Wizard
+
 - Open a browser window and go to Oracle SOA Cloud Service:
 https://myservices.DC_code.oraclecloud.com/
 
@@ -113,13 +137,17 @@ https://myservices.DC_code.oraclecloud.com/
 - Enter your user name and password.
 
 - In the Oracle Cloud My Services page, click the menu icon on the left and then choose the Database link under Services.
+
 ![](images/provisioning/image018.png)
 
 - On the Oracle Database Cloud Service page, click Create Instance.
+
 ![](images/provisioning/image019.png)
+
 The Create Database Cloud Service Instance wizard displays the Service page.
 
 ### Specifying the Basic Service Information
+
 In this section, you provide basic information, including the service level and billing frequency, the Oracle Database software release that you want to run on your instance, and the edition of that software release.
 
 - On the Instance page, specify the following values:
@@ -206,12 +234,18 @@ you supplied in the OBEs listed above. Be sure you have the following informatio
 - The database administrator password you provided earlier
 
 ## Creating an Instance
+
 - Open a browser window and go to Oracle SOA Cloud Service:
 https://myservices.DC_code.oraclecloud.com
+
 - Sign in to your Services Console using your identity domain, user name and password.
+
 - In the Oracle Cloud My Services page, click the menu icon on the left and then choose the SOA link under Services.
+
 ![](images/provisioning/image025.png)
+
 - On the Oracle SOA Cloud Service page, under Instances tab, click Create Instance.
+
 ![](images/provisioning/image026.png)
 
 ### Providing Basic Service Instance Information
@@ -233,13 +267,14 @@ Software Release: Oracle 12c 12.2.1.2.0
 Click Next to specify Service Details.
 
 ### Specifying Service Details
+
 Select the various details required for your service instance.
 
-Select Service Type
+#### Select Service Type
 
 Service Type: SOA with SB and B2B
 
-### Weblogic
+#### Weblogic
 
 Compute Shape: OC2M- 2 OCPUs and 30 GB RAM.
 
@@ -251,7 +286,7 @@ Confirm Password: welcome1
 
 Enable Admin Console: Checked
 
-### Database Configuration
+#### Database Configuration
 
 Name: SOA12cEEDB (One created in the DB Provisioning previously)
 
@@ -259,7 +294,7 @@ Administration User Name: SYS
 
 Password: Database administrator password provided during DB Provisioing previously
 
-### Backup and Recovery Configuration
+#### Backup and Recovery Configuration
 
 Storage Container Name: 
 You can keep the default value for this purpose, but if you want to specify a different name, specify the name of the container in this format: `https|http://<storagedomain>/{version}/<schema name>/<container name> or <storage service name>-<identity domain name>/<container name>`. For example, storagesvc999-usoracleaccoutrial00999/backupContainer, where Identity_Domain is the name of your identity domain and container is the name of the container that you want to create/created for service instance backups.
@@ -272,7 +307,7 @@ Create Cloud Storage Container: Checked
 
 ***Note:*** The provisioning wizard automatically creates the storage container.
 
-### Load Balancer Configuration
+#### Load Balancer Configuration
 
 Provision Load Balancer: Checked
 
