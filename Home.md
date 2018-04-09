@@ -2,11 +2,12 @@
 
 ![](images/j2c-logo.png)
 
-> Updated: March 22nd, 2018
+> Updated: April 10th, 2018
 
 ## Journey To The Cloud: Oracle SOA Cloud Service - Enterprise Integration Hands On Lab - 
 
 ## Overview
+
 Oracle SOA Cloud Service provides a PaaS computing platform for running Oracle SOA Suite, Oracle Service Bus and Integration Analytics in the cloud.
 
 Enterprises can innovate faster, improve customer engagement, drive business-process efficiency, and accelerate digital transformation with Oracle Cloud. Oracle is the enterprise technology partner that positions companies for tomorrow, today; empowering businesses of all sizes on their journey of digital transformation. Oracle Cloud provides leading-edge capabilities in software as a service, platform as a service, infrastructure as a service, and data as a service.
