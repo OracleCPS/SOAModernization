@@ -36,72 +36,11 @@ In this section, you will build your SOA Suite 12c composite. This composite wil
 - Tutorial resources have been downloaded and unzipped to a directory of your choice. When referring to any resources in the following chapters (for example **wsdl** or **sample input**), we will always refer to directories, relative to the unzipped location e.g. 
 **~\Resources**. For example **~\Resources\sample_input\input.xml**.
 
-## Start JDeveloper
-
-### High-Level Steps
-
-- Start JDeveloper
-
-### Steps in Detail
-
-#### Start JDeveloper
-
-- Make sure JDeveloper is not already running. Double click on **JDeveloper** on the Desktop.
-
-- Once the Select Role dialog comes up, accept the default ***Studio Developer (All Features).***
-
-  ![](images/validatePayment/image053.png)
-
-- Click **OK**.
-
-## Build the Composite
-
-In this section, you will open your Oracle SOA Suite 12c composite to validate a credit card payment.  
-Here credit card payments will be validated and the payment status will be returned. If the payment is denied, the order will not be processed. You will update the Database adapter reference to point to the DBCS instance that you provisioned in the first Lab.
-
-Once done, your composite should be as follows -
-
-![](images/validatePayment/image036.png)
-
-All available credit cards will be stored in the database, including payment type, card number, expiry date, card name and daily limit. 
-
-The incoming order message includes the credit card information. 
-
-For example, the payment part of the order message would look like this:
-
-```javascript
-<soas:Billing>
-	<soas:CardPaymentType>1</soas:CardPaymentType>
-	<soas:CardNum>1234123412341234</soas:CardNum>
-	<soas:ExpireDate>0316</soas:ExpireDate>
-	<soas:CardName>AMEX</soas:CardName>
-	<soas:BillingAddress>
-        <soas:FirstName>Daniel</soas:FirstName>
-		<soas:LastName>Day-Lewis</soas:LastName>
-		<soas:AddressLine>555 Beverly Lane</soas:AddressLine>
-		<soas:City>Hollywood</soas:City>
-		<soas:State>CA</soas:State>
-		<soas:ZipCode>12345</soas:ZipCode>
-		<soas:PhoneNumber>5127691108</soas:PhoneNumber>
-	</soas:BillingAddress>
-</soas:Billing>
-```
-
-The validation process has three steps:
-
-1.	The payment information is retrieved from the database, using the credit card number, quoted in the order message, as the key. If there is no data available for this credit card number, then the payment is denied. 
-
-2.	If data for the credit card number is available, the expiry date in the database record is compared to the expiry date listed in the order message. If they are not the same, the payment is denied.
-
-3.	The last check looks at whether the total order amount is less than the daily limit on the credit card in the database. If this is not the case, then the payment is also denied.
-
-    If all tests are successful, then the payment is authorized.
-
-    The implementation of this service uses a BPEL process to retrieve the credit card data from the database and perform the tests outlined above. The service will return either `Authorized` or `Denied` as the payment status.
-
 ### High-Level Steps
 
 -   Create Datasources and update the Database Adapter
+
+-   Start JDeveloper
 
 -	Open the SOA composite application provided
 
@@ -247,8 +186,61 @@ The validation process has three steps:
 
     ![](images/validatePayment/image206.png)
 
+**Start JDeveloper**
+
+- Make sure JDeveloper is not already running. Double click on **JDeveloper** on the Desktop.
+
+- Once the Select Role dialog comes up, accept the default ***Studio Developer (All Features).***
+
+  ![](images/validatePayment/image053.png)
+
+- Click **OK**.
+
 **Open the SOA composite application and project**
 
+In this section, you will open your Oracle SOA Suite 12c composite to validate a credit card payment.  
+Here credit card payments will be validated and the payment status will be returned. If the payment is denied, the order will not be processed. You will update the Database adapter reference to point to the DBCS instance that you provisioned in the first Lab.
+
+Once done, your composite should be as follows -
+
+![](images/validatePayment/image036.png)
+
+All available credit cards will be stored in the database, including payment type, card number, expiry date, card name and daily limit. 
+
+The incoming order message includes the credit card information. 
+
+For example, the payment part of the order message would look like this:
+
+```javascript
+<soas:Billing>
+	<soas:CardPaymentType>1</soas:CardPaymentType>
+	<soas:CardNum>1234123412341234</soas:CardNum>
+	<soas:ExpireDate>0316</soas:ExpireDate>
+	<soas:CardName>AMEX</soas:CardName>
+	<soas:BillingAddress>
+        <soas:FirstName>Daniel</soas:FirstName>
+		<soas:LastName>Day-Lewis</soas:LastName>
+		<soas:AddressLine>555 Beverly Lane</soas:AddressLine>
+		<soas:City>Hollywood</soas:City>
+		<soas:State>CA</soas:State>
+		<soas:ZipCode>12345</soas:ZipCode>
+		<soas:PhoneNumber>5127691108</soas:PhoneNumber>
+	</soas:BillingAddress>
+</soas:Billing>
+```
+
+The validation process has three steps:
+
+1.	The payment information is retrieved from the database, using the credit card number, quoted in the order message, as the key. If there is no data available for this credit card number, then the payment is denied. 
+
+2.	If data for the credit card number is available, the expiry date in the database record is compared to the expiry date listed in the order message. If they are not the same, the payment is denied.
+
+3.	The last check looks at whether the total order amount is less than the daily limit on the credit card in the database. If this is not the case, then the payment is also denied.
+
+    If all tests are successful, then the payment is authorized.
+
+    The implementation of this service uses a BPEL process to retrieve the credit card data from the database and perform the tests outlined above. The service will return either `Authorized` or `Denied` as the payment status.
+    
 Open the SOA Composite application provided.
 
 -	From the **Applications** menu, click on **Open Application**.
