@@ -71,19 +71,19 @@ For example, the payment part of the order message would look like this:
 
 ```javascript
 <soas:Billing>
-		<soas:CardPaymentType>1</soas:CardPaymentType>
-		<soas:CardNum>1234123412341234</soas:CardNum>
-		<soas:ExpireDate>0316</soas:ExpireDate>
-		<soas:CardName>AMEX</soas:CardName>
-		<soas:BillingAddress>
-			 <soas:FirstName>Daniel</soas:FirstName>
-		       <soas:LastName>Day-Lewis</soas:LastName>
-		       <soas:AddressLine>555 Beverly Lane</soas:AddressLine>
-			 <soas:City>Hollywood</soas:City>
-			 <soas:State>CA</soas:State>
-			 <soas:ZipCode>12345</soas:ZipCode>
-			 <soas:PhoneNumber>5127691108</soas:PhoneNumber>
-		</soas:BillingAddress>
+	<soas:CardPaymentType>1</soas:CardPaymentType>
+	<soas:CardNum>1234123412341234</soas:CardNum>
+	<soas:ExpireDate>0316</soas:ExpireDate>
+	<soas:CardName>AMEX</soas:CardName>
+	<soas:BillingAddress>
+        <soas:FirstName>Daniel</soas:FirstName>
+		<soas:LastName>Day-Lewis</soas:LastName>
+		<soas:AddressLine>555 Beverly Lane</soas:AddressLine>
+		<soas:City>Hollywood</soas:City>
+		<soas:State>CA</soas:State>
+		<soas:ZipCode>12345</soas:ZipCode>
+		<soas:PhoneNumber>5127691108</soas:PhoneNumber>
+	</soas:BillingAddress>
 </soas:Billing>
 ```
 
@@ -412,11 +412,9 @@ The design iteration is complete and you are now ready to deploy the composite t
 
 -	Next the application is built and deployed to a SAR file. If there are no compilation errors, you will see on the SOA log, at the bottom of JDeveloper, **BUILD SUCCESSFUL** and then the deployment starts.
 
-    ![](images/validatePayment/image223.png)
+    ![](images/validatePayment/image106.png)
 
 - In the Deployment log, view the details of the deployment.
-
-    ![](images/validatePayment/image106.png)
 
     ![](images/validatePayment/image195.png)
 
