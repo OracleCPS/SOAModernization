@@ -3,7 +3,7 @@
         "title": "Cloud Accelerate: SOA Cloud Service (SOACS) Developer Workshop",
         "description": "A hands-on event to explore Oracle’s SOA Cloud Service.",
         "theme": "ttc",
-        "interactive": "https://launch.oracle.com/?ttcicsdeveloper",
+        "interactive": "https://launch.oracle.com/?ttcsoacsdeveloper",
         "labs": [{
                 "number": "1",
                 "filename": "Home.md",
@@ -17,21 +17,21 @@
             },
             {
                 "number": "100",
-                "filename": "ics100.md",
+                "filename": "soacs100.md",
                 "title": "Lab 100: SOACS Provisioning and Overview",
                 "description": "In this Lab we sare going to provision SOACS and review the details of Oracle Cloud Portal with an existing SOACS instance."
             },
             {
                 "number": "200",
-                "filename": "ics200.md",
+                "filename": "soacs200.md",
                 "title": "Lab 200: ValidatePayment Composite Development",
                 "description": "In this Lab we are going to build a 'ValidatePayment' web service."
             },
             {
                 "number": "300",
-                "filename": "ics300.md",
+                "filename": "soacs300.md",
                 "title": "Lab 300: SOACS composite applications Deployment from Oracle JDeveloper",
-                "description": "In this Lab we are going to deploy an 'Hello World' web service to SOA Cloud Service from Oracle JDeveloper."
+                "description": "In this Lab we are going to deploy the 'ValidatePayment' web service to SOA Cloud Service from Oracle JDeveloper."
             }
         ]
     }
