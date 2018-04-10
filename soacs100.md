@@ -266,13 +266,19 @@ Enter the basic information for your instance.
 
 **Service Description:** Optionally describe the serrvice instance.
 
+**Region:** us-ashburn-1
+
+**Availability Domain:** Leave Default
+
+**Subnet:** Leave Default
+
 **SSH Public Key:** Click **Edit**. Select Key file name and click Choose File to select the file you created earlier that contains the public key for the secure shell (SSH). Click **Enter**.
 
 ![](images/provisioning/image022.png)
 
 **Software Release:** Oracle 12c 12.2.1.2.0
 
-![](images/provisioning/image027.png)
+![](images/provisioning/image027_001.png)
 
 Click **Next** to specify **Service Details**.
 
