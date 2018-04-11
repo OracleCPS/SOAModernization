@@ -322,6 +322,8 @@ Open the SOA Composite application provided.
 
 - Click **Finish**.
 
+- Save all by clicking the ![](images/validatePayment/image152.png) button on the top.
+
 - Check the contents of the **E2E_1201_PAYMENTINFO** table by opening the SQL Worksheet and typing the following command-
 
     `select * from E2E_1201_PAYMENTINFO;`
