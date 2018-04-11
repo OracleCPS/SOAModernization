@@ -24,8 +24,8 @@
             {
                 "number": "200",
                 "filename": "soacs200.md",
-                "title": "Lab 200: ValidatePayment Composite Development",
-                "description": "In this Lab we are going to build a 'ValidatePayment' web service."
+                "title": "Lab 200: ValidatePayment Composite Development and Deployment",
+                "description": "In this Lab we are going to build a 'ValidatePayment' web service and deploy it using Enterprise Manager."
             },
             {
                 "number": "300",

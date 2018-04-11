@@ -8,50 +8,42 @@
 
 **To View in Interactive Labguide Format:**  
 
-[GitHub IO Pages](https://rebrand.ly/ttcicslab)
+[GitHub IO Pages](https://rebrand.ly/ttcsoacslab)
 
-# Deep Dive ICS
+# Deep Dive SOACS
 
 **Reference the following Lab Guides by opening their Documentation Files:**
+
 ## Required pre-work
 
-**Documentation**: ics000.md
+**Documentation**: soacs000.md
 
-## Lab 100: Getting Started
+## Lab 100: SOACS Provisioning
 
-**Documenation**: ics100.md
+**Documenation**: soacs100.md
 
 ### Objectives
+
 The objective of this lab is to expose you to:
 
-- **Getting familiar with ICS concepts**
+- **Provision Oracle SOA Cloud Service and all pre-requisites required for it**
 
-## Lab 200: Mappings
+## Lab 200: Build and deploy a SOA composite to SOACS using Enterprise Manager
 
-**Documenation**: ics200.md
+**Documenation**: soacs200.md
 
 ### Objectives
+
 The objective of this lab is to expose you to:
 
-- **Build your first 'hello world' integration**
+- **Build 'ValidatePayment' composite and deploy it to SOACS using EM console**
 
+## Lab 300: Deployment of composites to SOACS from JDeveloper
 
-## Lab 300: Adapters
-
-**Documenation**: ics300.md
+**Documenation**: soacs300.md
 
 ### Objectives
+
 The objective of this lab is to expose you to the:
 
-- **Integration into backend systems**
-
-- **Database adapter**
-
-## Lab 400: Orchestration
-
-**Documentation**: ics400.md
-
-### Objectives
-
-- **Use the previous labs experiences to build a integration into Oracle's eBusiness Suite**
-
+- **Deployment of SOA composites to SOACS using JDeveloper design time**

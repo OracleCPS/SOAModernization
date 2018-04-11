@@ -14,7 +14,7 @@ Enterprises can innovate faster, improve customer engagement, drive business-pro
 
 At Oracle we have invested in delivering a plethora of new Cloud Services and we want to show you how simple – yet powerful they are. We specifically wanted to focus on low code, high productivity services that can be used in building enterprise grade solutions. We believe the best way to do this is to showcase a real world business solution comprised of these services. You will build the entire solution during the course of this workshop all in a stress-free fun environment. 
 
-This workshop will focus on the SOA Cloud Service (ICS) capabilities.
+This workshop will focus on the SOA Cloud Service (SOACS) capabilities.
 
 ## Hands-on Lab Overview
 
@@ -27,6 +27,7 @@ This hands-on lab will allow participants to do the following:
 - Lab 300 - Deploy a SOA composite to Oracle SOA Cloud Service from JDeveloper
 
 ## Get Started: 
+
 Open the navigation menu using the hamburger icon in the upper left of the menu bar to choose a lab guide and get started.
 
 The hamburger menu has an icon that looks like this: <img src="images/menu.svg">
