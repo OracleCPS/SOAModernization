@@ -7,5 +7,3 @@
 ## Supported Browsers
 
 Most modern browsers including Chrome, Safari, Internet Explorer, Edge and Firefox are supported.
-
-![](images/browsers.jpeg)
