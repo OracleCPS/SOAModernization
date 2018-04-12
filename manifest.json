@@ -11,7 +11,7 @@
                 "description": "Welcome to the SOA Cloud Service Integration workshop"
             },{
                 "number": "10",
-                "filename": "StudentGuide.md",
+                "filename": "soacs000.md",
                 "title": "Prerequisites",
                 "description": "Workshop guidance and prerequisites"
             },

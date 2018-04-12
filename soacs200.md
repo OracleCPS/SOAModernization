@@ -78,7 +78,7 @@ In this section, you will build your SOA Suite 12c composite. This composite wil
 
     ![](images/validatePayment/image166.png)
 
-- Enter the **Name** as **SOACS_Demo_DS** and enter the **JNDI Name** as **jdbc/soademo**. Click **Next**.
+- Enter the **Name** as **`SOACS_Demo_DS`** and enter the **JNDI Name** as **jdbc/soademo**. Click **Next**.
 
     ![](images/validatePayment/image167.png)
 
@@ -263,7 +263,9 @@ Open the SOA Composite application provided.
   The database adapter will process your choices, and provides a service that implements the operation specified.  The WSDL file to represent that service is **getPaymentInformation.wsdl**.
 
   You can see the .jca file of the **getPaymentInformation** database adapter, together with two XML files under the **Adapters** subfolder and the WSDL file of the **getPaymentInformation** service under the **WSDLs** subfolder. 
-  A schema file **getPaymentInformation_table.xsd** has also been created. This is used to define the input and output variables for the DB adapter call. 
+  
+  A schema file **getPaymentInformation_table.xsd** has also been created. This is used to define the input and output variables for the DB adapter call.
+
   The adapter does a select on the E2E_1201_PAYMENT_INFO table hosted on the Database Cloud Service that was provisioned. You can update the connection to the DBCS instance and browse the tables –
 
     ![](images/validatePayment/image050.png)
@@ -324,7 +326,7 @@ Open the SOA Composite application provided.
 
 - Save all by clicking the ![](images/validatePayment/image152.png) button on the top.
 
-- Check the contents of the **E2E_1201_PAYMENTINFO** table by opening the SQL Worksheet and typing the following command-
+- Check the contents of the **`E2E_1201_PAYMENTINFO`** table by opening the SQL Worksheet and typing the following command-
 
     `select * from E2E_1201_PAYMENTINFO;`
 
@@ -336,7 +338,7 @@ Open the SOA Composite application provided.
 
     ***Note:*** There are 2 rows in the table.
 
--	The Exposed Service **validatepaymentprocess_client_ep** is the external client web service that will provide the external interface to the BPEL process. 
+-	The Exposed Service **`validatepaymentprocess_client_ep`** is the external client web service that will provide the external interface to the BPEL process. 
 
 **Review the validatePayment BPEL process**
 
@@ -488,9 +490,9 @@ The Oracle Enterprise Manager Fusion Middleware Control allows you to test your 
 
   When testing in EM FMWC you need to add a SOAP envelope to the test message. In order to make testing easier, we already added the soap envelope to the test messages.
 
-  There are two sample message available in **~\Resources\sample_input** to test the validatePayment project: **PaymentInfoSample_Authorized_soap.xml**, and **PaymentInfoSample_Denied_soap.xml**.
+  There are two sample message available in **`~\Resources\sample_input`** to test the validatePayment project: **`PaymentInfoSample_Authorized_soap.xml`**, and **`PaymentInfoSample_Denied_soap.xml`**.
  
-- Enter the data or switch to XML view and use the **PaymentInfoSample_Authorized_soap.xml** sample message.
+- Enter the data or switch to XML view and use the **`PaymentInfoSample_Authorized_soap.xml`** sample message.
 
 -	Click **Test Web Service**.
 
