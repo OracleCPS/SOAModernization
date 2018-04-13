@@ -18,6 +18,51 @@ In this lab, you will deploy the **`ValidatePayment`** composite from JDeveloper
 
 - The following lab and the **ValidatePayment** composite configured in the previous lab.
 
+## Pre-requisites
+
+After provisioning the SOA Cloud Service instance, there are several post-provisioning steps that
+are required for deployment from JDeveloper to be successful.
+
+From the SOA Cloud Service instance details page, you get the public IP address and the host of the SOACS weblogic server.
+
+![](images/jdevDeploy/image243.png)
+
+![](images/jdevDeploy/image244.png)
+
+- Add an access rule in the SOA Cloud Service Console to permit traffic from JDeveloper.
+
+    Click on the hamburger icon and select **Access Rules**
+
+    ![](images/jdevDeploy/image245.png)
+
+- Click **Create Rule**.
+
+    ![](images/jdevDeploy/image246.png)
+    
+- Enter the details as in the below screenshot and click **Create**.
+
+    ![](images/jdevDeploy/image247.png)
+
+**Create a host entry in your environment**
+
+- Open a terminal by Right click and **Open in Terminal**.
+
+    ![](images/jdevDeploy/image250.png)
+
+- Enter ***su*** and enter Password as **oracle** when prompted.
+
+- Open the hosts file. Enter the **etc** folder by typing **cd /root/** followed by **cd /etc**. Enter **vi hosts**.
+
+    ![](images/jdevDeploy/image251.png)
+
+- Add the **IP** and **Hostname** into the host file. Hit **Esc** on the keyboard and press **`i`** to edit. Add the entry, hit **Esc** followed by **`:wq`** and hit **Enter**.
+
+    ![](images/jdevDeploy/image252.png)
+
+- Verify the entry by typing **cat hosts**.
+
+    ![](images/jdevDeploy/image253.png)
+
 ## High-Level Steps
 
 -   Deploy the ValidatePayment Composite from JDeveloper

@@ -52,6 +52,8 @@ In this section, you will build your SOA Suite 12c composite. This composite wil
 
 -   Create a SAR deployment
 
+-   Open the HTTP Port on SOACS instance
+
 -	Deploy and test the project
 
 ### Steps in Detail
@@ -377,6 +379,22 @@ Open the SOA Composite application provided.
     b) AuthorizationAmount (= total order price) is smaller than daily limit on credit card
 
 -	**Save All** and close the XSLT Map.
+
+**Open the HTTP Port on SOACS instance**
+
+- Add an access rule in the SOA Cloud Service Console to permit traffic on HTTP port (80).
+
+    Click on the hamburger icon and select **Access Rules**
+
+    ![](images/jdevDeploy/image245.png)
+
+- Click **Create Rule**.
+
+    ![](images/jdevDeploy/image246.png)
+    
+- Enter the details as in the below screenshot and click **Create**.
+
+    ![](images/jdevDeploy/image249.png)
 
 **Deploy the SOA composite**
 
