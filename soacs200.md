@@ -267,7 +267,7 @@ Open the SOA Composite application provided.
 
 -	 Browse to **e2e-1201-composites.jws** from **~\Resources\SOA** folder.
 
-        ***Note:*** You may have to open the application from **/u02/training/SOAJdevProjects/e2e-1201-composites** floder if connected to a remote server through VNC or other software.
+        ***Note:*** You may have to open the application from **/u02/training/SOAJdevProjects/e2e-1201-composites** folder if connected to a remote server through VNC or other software.
 
 -   A project **“ValidatePayment”** is opened with some predefined components. 
 
