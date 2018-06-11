@@ -33,7 +33,7 @@ If you don't have the user name, password, and web console URL, contact your org
 
 Enter the basic information for your instance.
 
-**Service Name:** SOACSServerStudent **`X`**
+**Service Name:** SOACSServerStudent`X`
 where `X` is the student number alloted to you (1,2,3,....)
 
 **Service Description:** Optionally describe the service instance.
@@ -82,10 +82,10 @@ Select the various details required for your service instance.
 
 #### Database Configuration
 
-**Name:** SOACSDBStudent **`X`**
+**Name:** SOACSDBStudent`X`
 where `X` is the student number alloted to you (1,2,3,....)
 
-***Note:*** The DBCS instances are pre-provisioned for the labs per sutdent number (1,2,3,....)
+***Note:*** The DBCS instances are pre-provisioned for the labs per student number (1,2,3,....)
 
 **Administration User Name:** SYS
 
@@ -96,7 +96,7 @@ where `X` is the student number alloted to you (1,2,3,....)
 **Storage Container Name:** 
 Specify the name of the container in this format: `https|http://<storagedomain>/{version}/<schema name>/<container name> or <storage service name>-<identity domain name>/<container name>`.
 
-For example, **https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas001/mySOACSServerStudentXBucket**, where uscom-east-1 is the name of your identity domain and mySOACSServerStudent **`X`** Bucket is the name of the container that you want to create/created for service instance backups with `X` being the student number alloted to you.
+For example, **https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas001/mySOACSServerStudentXBucket**, where uscom-east-1 is the name of your identity domain and mySOACSServerStudent`X` Bucket is the name of the container that you want to create/created for service instance backups with `X` being the student number alloted to you.
 
 **Storage User Name:** Enter the same user name that you used to log in to the Oracle Cloud My Services page.
 
