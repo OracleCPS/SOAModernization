@@ -20,28 +20,8 @@ In this lab, you will deploy the **`ValidatePayment`** composite from JDeveloper
 
 ## Pre-requisites
 
-After provisioning the SOA Cloud Service instance, there are several post-provisioning steps that
+After provisioning the SOA Cloud Service instance, there are a few post-provisioning steps that
 are required for deployment from JDeveloper to be successful.
-
-From the SOA Cloud Service instance details page, you get the public IP address and the host of the SOACS weblogic server.
-
-![](images/jdevDeploy/image243.png)
-
-![](images/jdevDeploy/image244.png)
-
-- Add an access rule in the SOA Cloud Service Console to permit traffic from JDeveloper.
-
-    Click on the hamburger icon and select **Access Rules**
-
-    ![](images/jdevDeploy/image245.png)
-
-- Click **Create Rule**.
-
-    ![](images/jdevDeploy/image246.png)
-    
-- Enter the details as in the below screenshot and click **Create**.
-
-    ![](images/jdevDeploy/image247.png)
 
 **Create a host entry in your environment**
 

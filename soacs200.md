@@ -18,7 +18,7 @@ The activities in this document aim to introduce you to key new features such as
 
 - Design Times in JDeveloper – SOA
 
-- More…
+- Lift and Shift SOA Composites to SOACS
 
 ## Validate Payment: SOA Composites 
 
@@ -33,10 +33,28 @@ In this section, you will build your SOA Suite 12c composite. This composite wil
 
 ## Pre-requisites
 
+### VNC
+
+- VNCViewer has been downloaded and installed on your machine. VNCViewer is available for various operating systems here - https://www.realvnc.com/en/connect/download/viewer/
+
+- Configure VNC Viewer. Click File->New Connection
+
+    ![](images/validatePayment/image228.png)
+
+- Enter the VNC Server **IP:Port** and an optional name for the instance. Click **OK**
+
+    ![](images/validatePayment/image230.png)
+
+- Double click the newly created instance and enter the password for the VNC Server when prompted and click **OK**
+
+    ![](images/validatePayment/image231.png)
+
+### Resources
+
 - Tutorial resources have been downloaded and unzipped to a directory of your choice. When referring to any resources in the following chapters (for example **wsdl** or **sample input**), we will always refer to directories, relative to the unzipped location e.g. 
 **~\Resources**. For example **~\Resources\sample_input\input.xml**.
 
-### High-Level Steps
+## High-Level Steps
 
 -   Create Datasources and update the Database Adapter
 
@@ -56,7 +74,7 @@ In this section, you will build your SOA Suite 12c composite. This composite wil
 
 -	Deploy and test the project
 
-### Steps in Detail
+## Steps in Detail
 
 **Create Datasources and update the Database Adapter**
 
@@ -84,13 +102,13 @@ In this section, you will build your SOA Suite 12c composite. This composite wil
 
     ![](images/validatePayment/image167.png)
 
-- Keep the default driver **Oracle's Driver (Thin) for Service connections**. Click **Next**.
+- Keep the default driver **Oracle's Driver (Thin XA) for Service connections**. Click **Next**.
 
-    ![](images/validatePayment/image168.png)
+    ![](images/validatePayment/image168_001.png)
 
-- Select **Emulate Two-Phase Commit** and click **Next**.
+- Click **Next** after reviewing the XA options.
 
-    ![](images/validatePayment/image216.png)
+    ![](images/validatePayment/image216_001.png)
 
 - Enter the connection details to the DBCS instance for the data source.
 
@@ -164,9 +182,9 @@ In this section, you will build your SOA Suite 12c composite. This composite wil
 
     ![](images/validatePayment/image199.png)
 
-- Set the DataSourceName to **jdbc/soademo**. Hit **Enter** on the keyboard. Click **Save**.
+- Set the XADataSourceName to **jdbc/soademo**. Hit **Enter** on the keyboard. Click **Save**.
 
-    ![](images/validatePayment/image200.png)
+    ![](images/validatePayment/image200_001.png)
 
 - Click **Activate Changes** and make sure there are no errors.
 
@@ -250,6 +268,8 @@ Open the SOA Composite application provided.
     ![](images/validatePayment/image218.png)
 
 -	 Browse to **e2e-1201-composites.jws** from **~\Resources\SOA** folder.
+
+        ***Note:*** You may have to open the application from **/u02/training/SOAJdevProjects/e2e-1201-composites** floder if connected to a remote server through VNC or other software.
 
 -   A project **“ValidatePayment”** is opened with some predefined components. 
 
