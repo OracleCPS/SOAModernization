@@ -102,8 +102,6 @@ For example, **https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas001
 
 **Cloud Storage Password:** Enter the same password that you used to log in to the Oracle Cloud My Services page.
 
-**Create Cloud Storage Container:** Checked
-
 ***Note:*** The provisioning wizard automatically creates the storage container.
 
 ### Confirming Your Subscription Selections
